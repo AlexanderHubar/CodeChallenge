@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #7F7FD5;
+  background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);
+  background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  width: 738px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.form-body {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.form__input {
+  height: 46px;
+  border: none;
+  background: #f7f7f7;
+  width: 100%;
+  padding: 0 25px;
+  border-radius: 23px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.label {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.label::before {
+  content: '';
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #aac1f0;
+  border-radius: 50%;
+}
+
+.form__button {
+  display: flex;
+  height: 46px;
+  width: 146px;
+  align-items: center;
+  justify-content: center;
+  background: #aac1f0;
+  border: none;
+  border-radius: 23px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form__button:last-child {
+  margin-left: auto;
+}
+
+.form-buttons {
+  display: flex;
+}
+
+.step {
+  display: none;
+  width: 60%;
+}
+
+.photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  border: 5px solid #aac1f0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.fields {
+  margin-left: auto;
+  width: 60%;
+}
+
+.step:not(:first-child) {
+  flex-direction: column;
+}
+
+.step-list {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  bottom: -50px;
+  list-style: none;
+}
+
+.step-list__item {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: white;
+}
+
+.step-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.active {
+  width: 22px;
+  transition: all 0.5s ease;
+  border-radius: 5.5px;
+}

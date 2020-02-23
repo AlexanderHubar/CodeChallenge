@@ -5,9 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Challenge 1</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <form class="form" id="form">
+    <div class="form-body">
+      <div class="photo">
+        <img src="Colt.jpg" alt="Colt Steele">
+      </div>
+      <div class="step">
+        <div class="label"><input class="form__input" type="text" placeholder="First name"></div>
+        <div class="label"><input class="form__input" type="text" placeholder="Second name"></div>
+      </div>
+      <div class="step">
+        <div class="label"><input class="form__input" type="tel" placeholder="Phone number"></div>
+        <div class="label"><input class="form__input" type="email" placeholder="Email"></div>
+      </div>
+      <div class="step">
+        <div class="label"><input class="form__input" type="password" placeholder="Password"></div>
+        <div class="label"><input class="form__input" type="password" placeholder="Confirm password"></div>
+      </div>
+    </div>
+    <div class="form-buttons">
+      <button class="form__button" id="backBtn">Back</button>
+      <button class="form__button" id="continueBtn">Continue</button>
+    </div>
+    <ul class="step-list">
+      <li class="step-list__item"></li>
+      <li class="step-list__item"></li>
+      <li class="step-list__item"></li>
+    </ul>
+  </form>
   <script src="script.js"></script>
 </body>
 
