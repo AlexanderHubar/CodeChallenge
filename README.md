@@ -1,1 +1,1 @@
-# CodeChallenge-1
+# CodeChallenge
